@@ -1,0 +1,35 @@
+<div id="analysis-section" class="analysis-container">
+  <h2>
+    Analysis
+    <button
+      id="toggle-analysis-btn"
+      class="btn btn-link"
+      aria-expanded="true"
+      onclick="toggleAnalysis()"
+    >
+      Hide Analysis
+    </button>
+  </h2>
+  <button class="btn btn-secondary mt-3 mr-2" onclick="restartAnalysis()">
+    Restart Analysis
+  </button>
+  <button
+    class="btn btn-info mt-3 mr-2"
+    data-toggle="modal"
+    data-target="#treeModal"
+  >
+    View Repository Tree
+  </button>
+  <button
+    class="btn btn-info mt-3"
+    data-toggle="modal"
+    data-target="#chartViewerModal"
+  >
+    View Charts
+  </button>
+  <div
+    id="analysis"
+    class="alert alert-info mt-3 collapse show"
+    role="alert"
+  ></div>
+</div>

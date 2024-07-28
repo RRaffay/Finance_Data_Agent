@@ -1,0 +1,49 @@
+<div
+  class="modal fade"
+  id="chartViewerModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="chartViewerModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chartViewerModalLabel">Chart Viewer</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="max-height: 80vh; overflow-y: auto">
+        <div
+          id="selected-chart-container"
+          class="text-center"
+          style="display: none"
+        >
+          <img id="selected-chart" class="img-fluid" style="max-width: 90%" />
+          <div id="selected-chart-label" class="mt-2"></div>
+          <button class="btn btn-primary mt-2" id="download-chart">
+            Download
+          </button>
+        </div>
+        <div class="d-flex justify-content-end mb-2">
+          <button class="btn btn-primary" id="refresh-charts">Refresh</button>
+        </div>
+        <div
+          id="charts-container"
+          class="d-flex flex-wrap justify-content-center"
+        ></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

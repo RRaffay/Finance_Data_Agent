@@ -1,0 +1,28 @@
+<div id="chat-box" class="chat-container">
+  <div class="bottom-section">
+    <h2>Ask Follow-up Questions</h2>
+    <div class="loading-spinner text-center">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <div id="responses" class="chat-messages"></div>
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="question"
+        placeholder="Type your question here"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          onclick="askQuestion()"
+        >
+          Ask
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

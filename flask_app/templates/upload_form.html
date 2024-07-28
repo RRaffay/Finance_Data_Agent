@@ -1,0 +1,32 @@
+<form id="upload-form" class="mb-4" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="file">Upload Zip File:</label>
+    <input
+      type="file"
+      class="form-control-file"
+      id="file"
+      name="file"
+      accept=".zip"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="objective">Objective:</label>
+    <input
+      type="text"
+      class="form-control"
+      id="objective"
+      name="objective"
+      required
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Upload</button>
+  <button type="button" id="example-button" class="btn btn-secondary">
+    Load Example
+  </button>
+  <div class="loading-spinner text-center">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+</form>
